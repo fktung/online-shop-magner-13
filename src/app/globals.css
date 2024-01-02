@@ -2,26 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+::selection {
+  background-color: #fdcc00;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.is-input {
+  @apply top-0 scale-75 opacity-100 -left-1;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "Roboto";
+  @apply transition-all duration-300 bg-white dark:bg-dark dark:text-brand-light;
+}
+
+.active-sidebar {
+  @apply text-brand before:absolute before:ltr:right-0 rtl:left-0 before:bg-brand before:h-[3px] before:transition-all before:duration-300 before:bottom-2 before:w-full ltr:before:left-0 rtl:before:right-0 before:right-auto;
+}
+
+.filepond--credits {
+  @apply hidden
+}
+
+.mapsStyle {
+  @apply w-full h-full
+}
+
+.slick-dots {
+  @apply absolute bottom-3 flex justify-center w-full !important
+}
+
+.reward-item-list {
+  -webkit-clip-path: polygon(75% 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(75% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.slick-dots {
+  @apply top-full
 }

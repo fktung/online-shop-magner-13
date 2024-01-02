@@ -1,0 +1,16 @@
+export const LEADERBOARD = [
+  { name: "Bryen", komisi: 500100000 },
+  { name: "Johan", komisi: 40100000 },
+  { name: "John", komisi: 4000000 },
+  { name: "Tegar", komisi: 3900000 },
+  { name: "Si A", komisi: 3900000 },
+  { name: "Si b", komisi: 3500000 },
+  { name: "User c", komisi: 3200000 },
+  { name: "User D", komisi: 3200000 },
+  { name: "User E", komisi: 2900000 },
+  { name: "User F", komisi: 2800000 },
+  { name: "User G", komisi: 2500000 },
+  { name: "User Ha", komisi: 2300000 },
+  { name: "User I", komisi: 2200000 },
+  { name: "User Jz", komisi: 2100000 },
+];

@@ -1,0 +1,135 @@
+import React from "react";
+
+export const IconProduct = () => {
+  return (
+    <svg
+      width="1em"
+      height="1em"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 69.6 59.8"
+    >
+      <g>
+        <path
+          d="m52,10.2c1.4-1,4-1.1,4-1.1h1.7v.4s3.9,0,3.9,0v.5s1.2,0,1.2,0v1.8h-1.1s0,.5,0,.5c.7.7,1.2,1.4,1.5,2,2.7,5,5.5,6.2,5.5,6.2.5,1.2-.8.6-.8.6-4.9-1.6-6.9-6-9.1-7.2-.4-.2-.9-.4-1.4-.5v1.8h-3.1v-1.5c-.4.1-.8.3-1.1.5-1.4.7-2.6,1.6-3.4.6-1-1.3.9-3.7,2.2-4.6Z"
+          fill="none"
+          stroke="currentColor"
+          strokeMiterlimit="10"
+          strokeWidth="3"
+        />
+        <rect
+          x="54.7"
+          y="14.9"
+          width="2.4"
+          height="2.8"
+          transform="translate(111.7 32.6) rotate(-180)"
+          fill="none"
+          stroke="currentColor"
+          strokeMiterlimit="10"
+        />
+        <rect
+          x="54.3"
+          y="17.6"
+          width="3.2"
+          height="2"
+          transform="translate(111.7 37.3) rotate(-180)"
+          fill="none"
+          stroke="currentColor"
+          strokeMiterlimit="10"
+        />
+        <path
+          d="m52.9,19.6h5.9v1c0,1.2-1,2.2-2.2,2.2h-1.5c-1.2,0-2.2-1-2.2-2.2v-1h0Z"
+          transform="translate(111.7 42.5) rotate(-180)"
+          fill="none"
+          stroke="currentColor"
+          strokeMiterlimit="10"
+          strokeWidth="3"
+        />
+        <path
+          d="m51.7,22.8h8.3c1,0,1.8.8,1.8,1.8v30c0,2.4-2,4.4-4.4,4.4h-3.1c-2.4,0-4.4-2-4.4-4.4v-30c0-1,.8-1.8,1.8-1.8Z"
+          transform="translate(111.7 81.9) rotate(-180)"
+          fill="none"
+          stroke="currentColor"
+          strokeMiterlimit="10"
+          strokeWidth="3"
+        />
+        <path
+          d="m50.6,15.2s3,2.8,3,4.4h.7s0-2.4,0-2.4h.4s0-.8,0-.8c0,0-.7-1.4-1.9-2,0,0-.8.4-1.1.5-.5.2-1.1.2-1.1.2Z"
+          fill="none"
+          stroke="currentColor"
+          strokeMiterlimit="10"
+        />
+      </g>
+      <g>
+        <path
+          d="m4.1,17.4h5.3c.5,0,.9.4.9.9v2.6s0,0,0,0H3.3s0,0,0,0v-2.6c0-.5.4-.9.9-.9Z"
+          transform="translate(13.5 38.4) rotate(-180)"
+          fill="none"
+          stroke="currentColor"
+          strokeMiterlimit="10"
+          strokeWidth="3"
+        />
+        <path
+          d="m3.8,21h5.9v1.7c0,0,0,.1-.1.1H3.9c0,0-.1,0-.1-.1v-1.7h0Z"
+          transform="translate(13.5 43.8) rotate(-180)"
+          fill="none"
+          stroke="currentColor"
+          strokeMiterlimit="10"
+        />
+        <path
+          d="m2.6,22.8h8.3c1,0,1.8.8,1.8,1.8v30c0,2.4-2,4.4-4.4,4.4h-3.1c-2.4,0-4.4-2-4.4-4.4v-30c0-1,.8-1.8,1.8-1.8Z"
+          transform="translate(13.5 81.9) rotate(-180)"
+          fill="none"
+          stroke="currentColor"
+          strokeMiterlimit="10"
+          strokeWidth="3"
+        />
+      </g>
+      <g>
+        <path
+          d="m23,19c-.2.2-.3.4-.3.6-.2,2.2-1.3,13.8-1.2,16.8s2.8,2.7,2.8,2.7c0,0,3.1-.2,3.4-3.1s-.2-7.1.4-10.8-.7-4.9-2-6.4-2.2-.9-3.2.1Z"
+          fill="none"
+          stroke="currentColor"
+          strokeMiterlimit="10"
+          strokeWidth="3"
+        />
+        <path
+          d="m34.4,7.4h-7.2c-3,0-2.6,1.8-3.7,4.3h-1.4c-1.3,0-2.4.9-2.7,2.1-.6,2.7-1.5,8.4-2.2,19.1-.7,11.8.5,19.9,1.2,23.7.3,1.4,1.4,2.4,2.7,2.4h19.5c2.3,0,4.2-1.9,4.2-4.2,0,0,.8-15.3.8-20.5,0-13.4-3.4-27-11.2-27Z"
+          fill="none"
+          stroke="currentColor"
+          strokeMiterlimit="10"
+          strokeWidth="3"
+        />
+        <path
+          d="m23.5,11.7h6.7c3.9,0,6.5,3.1,8,6.7,2.5,5.9,2.3,12.9.9,40.4"
+          fill="none"
+          stroke="currentColor"
+          strokeMiterlimit="10"
+          strokeWidth="3"
+        />
+        <rect
+          x="26.4"
+          y="5.5"
+          width="9.3"
+          height="1.9"
+          rx=".4"
+          ry=".4"
+          fill="none"
+          stroke="currentColor"
+          strokeMiterlimit="10"
+        />
+        <rect
+          x="27.4"
+          y=".8"
+          width="7.3"
+          height="4.8"
+          rx=".6"
+          ry=".6"
+          fill="none"
+          stroke="currentColor"
+          strokeMiterlimit="10"
+          strokeWidth="3"
+        />
+      </g>
+    </svg>
+  );
+};
