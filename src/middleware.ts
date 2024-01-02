@@ -5,13 +5,15 @@ export function middleware(request: NextRequest) {
   const path = request.nextUrl.pathname;
   // console.log(request); // token ketika ada perubahan tidak berubah
   if (!token) {
-    return NextResponse.redirect(
+    NextResponse.redirect(
       new URL(`/login${path && "?path=" + path}`, request.url)
     );
   }
   if (request.nextUrl.basePath.startsWith("/product")) {
-    return NextResponse.redirect(new URL(`/products`, request.url));
+    NextResponse.redirect(new URL(`/products`, request.url));
   }
+
+  return NextResponse.next();
 }
 
 export const config = {

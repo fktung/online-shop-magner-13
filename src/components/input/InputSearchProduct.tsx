@@ -22,7 +22,7 @@ export const InputSearchProduct: React.FC<IProps> = (props) => {
   >([]);
   const router = useRouter();
   const params = useParams();
-  console.log(params);
+
   const { search, ...rest } = params;
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();

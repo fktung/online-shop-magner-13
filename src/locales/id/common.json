@@ -1,0 +1,32 @@
+{
+  "day": {
+    "monday": "Senin",
+    "tuesday": "Selasa",
+    "wednesday": "Rabu",
+    "thursday": "kamis",
+    "friday": "Jum'at",
+    "saturday": "Sabtu",
+    "sunday": "Minggu"
+  },
+  "address": "Alamat",
+  "care": "Perawatan",
+  "carCare": "Perawatan Mobil",
+  "continu": "Lanjut",
+  "update": "Update",
+  "everyDay": "Setiap hari",
+  "enterEmailAddress": "Masukkan Alamat Email",
+  "sendTo": "Kirim Ke",
+  "singIn": "masuk",
+  "singOut": "Keluar",
+  "office": "Kantor",
+  "liveChat": "Live Chat",
+  "loading": "Loading",
+  "motorcycleCare": "Perawatan Motor",
+  "searchProduct": "Cari product",
+  "searchMyOrder": "Masukan no invoice",
+  "kitchenCare": "Perawatan Dapur",
+  "furniturCare": "perawatan furniture",
+  "viewMore": "Lihat Selengkapnya",
+  "resending": "Kirim Ulang",
+  "submit": "Submit"
+}

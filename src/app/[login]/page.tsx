@@ -7,11 +7,12 @@ import {
 } from "next/navigation";
 import React from "react";
 
-function LoginPage() {
+function LoginPage({ params, searchParams }: any) {
+  const {} = searchParams;
   const router = useRouter();
-  const params = useParams();
   console.log(router);
   console.log(params);
+  console.log("searchParams", searchParams);
 
   return <div>LoginPage</div>;
 }

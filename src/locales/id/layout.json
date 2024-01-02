@@ -1,0 +1,39 @@
+{
+  "menu": {
+    "automotive": {
+      "title": "Perawatan Otomotif",
+      "otomotif": "Otomotif"
+    },
+    "homeCare": {
+      "title": "Perawatan rumah",
+      "perawatan": "Home Care"
+    },
+    "itemSearch": "Cari Barang",
+    "tutorial": "Tutorial",
+    "helpCenter": "Pusat Bantuan"
+  },
+  "footer": {
+    "information": {
+      "title": "Informasi",
+      "aboutUs": "Tentang Kami",
+      "tnc": "Syarat & Ketentuan",
+      "polNPriv": "Kebijakan & Privasi",
+      "returnPolicy": "Kebijakan Pengembalian"
+    },
+    "customerService": {
+      "title": "Layanan Konsumen",
+      "dashboard": "Dashboard",
+      "myProfile": "My Profile",
+      "myOrder": "My Order" 
+    },
+    "contactUs": {
+      "title": "Hubungi Kami",
+      "operationalHour": "(Kecuali Hari Libur) <br/> Pukul 09.00 - 18.00 WIB"
+    },
+    "subscribeNow": {
+      "title": "Ikuti Kami",
+      "subtitle": "Kamu Akan Dapat Promo Dan Info Menarik Dari Magner Care",
+      "enterEmailAddress": "Masukkan Alamat Email"
+    }
+  }
+}

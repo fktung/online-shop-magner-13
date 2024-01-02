@@ -7,7 +7,7 @@ interface INavbarV2 {
   className?: string;
 }
 
-export const NavbarV2: React.FC<INavbarV2> = props => {
+export const NavbarV2: React.FC<INavbarV2> = (props) => {
   const { setShowSidebar, showSidebar } = useLayout();
   const { className } = props;
 

@@ -1,0 +1,86 @@
+{
+  "home": {
+    "flashSale": {
+      "title": "Product Flash Sale"
+    },
+    "automotiveCare": {
+      "title": "perawatan otomotif",
+      "subtitle": "Cari dan temukan produk perawatan motor dan mobil di sini"
+    },
+    "trendingProducts": {
+      "title": "Produk Sedang Trend",
+      "subtitle": "Cari dan temukan produk yang sedang banyak dicari di sini"
+    }
+  },
+  "login": {
+    "label": "Masuk",
+    "subtitle": "Lihat pertumbuhan Anda dan dapatkan dukungan konsultasi seputar otomotif!",
+    "description": "Dengan mendaftar, saya setuju dengan Ketentuan Layanan dan Kebijakan Privasi",
+    "notHaveAccount": "Belum punya akun?",
+    "whatsappOrEmail": "Nomor Whatsapp",
+    "password": "Password",
+    "rememberMe": "Ingat Saya",
+    "forgotPassword": "Lupa Kata Sandi?"
+  },
+  "register": {
+    "label": "Daftar",
+    "now": "Daftar Sekarang",
+    "title": "Produk Perawatan Otomotif Terbaik",
+    "subtitle": "Daftar dan rawat kendaraan kesayanganmu",
+    "subtitleForm": "Lihat pertumbuhan Anda dan dapatkan dukungan konsultasi seputar otomotif!",
+    "description": "Dengan mendaftar, saya setuju dengan Ketentuan Layanan dan Kebijakan Privasi",
+    "alreadyHaveAccount": "Sudah punya akun?",
+    "fullName": "Nama Lengkap",
+    "email": "Email",
+    "phoneNumber": "Nomor Whatsapp",
+    "password": "Password",
+    "confrPassword": "Konfirmasi Password",
+    "refNumber": "Nomer Referral"
+  },
+  "verifcation": {
+    "label": "Verifikasi",
+    "title": "Masukkan Kode Verifikasi",
+    "subtitle": "Kode verifikasi telah dikirim melalui whatsapp nomor",
+    "wait": "Tunggu dalam",
+    "for": "untuk mengirim ulang kode",
+    "forgotPassword": {
+      "label": "Lupa Kata Sandi"
+    },
+    "success": {
+      "title": "Pendaftaran Berhasil",
+      "subtitle": "Mari mulai belanja kebutuhan kendaran kesayanganmu",
+      "startShopping": "Mulai Belanja"
+    },
+    "user": {
+      "label": "Atur Alamatmu",
+      "title": "Produk Perawatan Otomotif Terbaik",
+      "subtitle": "Daftar dan rawat kendaraan kesayanganmu",
+      "form": {
+        "title": "Atur Alamatmu",
+        "subtitle": "Masukkan alamatmu sekarang untuk mempermudah transaksi",
+        "recipientName": "Nama Penerima",
+        "recipientPhoneNumber": "Nomer HP Penerima",
+        "placeLabel": "Label Tempat",
+        "province": "Provinsi",
+        "countyTown": "Kota/Kabupaten",
+        "subdistrict": "kecamatan",
+        "village": "Desa",
+        "address": "Alamat Lengkap",
+        "additionAddress": "Detail Lainnya",
+        "notes": "Catatan",
+        "coordinate": "Koordinat"
+      }
+    }
+  },
+  "forgotPassword": {
+    "title": "Atur Ulang Kata Sandi",
+    "subtitle": "Masukkan e-mail atau nomor HP yang terdaftar. Kami akan mengirimkan kode verifikasi untuk atur ulang kata sandi.",
+    "inputLabel": "Nomor Whatsapp"
+  },
+  "createNewPassword": {
+    "title": "Buat Kata Sandi Baru",
+    "subtitle": "Masukkan kata sandi baru dan ingat kata sandi untuk masuk",
+    "password": "Kata sandi Baru",
+    "confrPassword": "Kata sandi Baru"
+  }
+}
