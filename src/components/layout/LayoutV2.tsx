@@ -44,7 +44,7 @@ export const LayoutV2 = (props: ILayout) => {
     };
 
     checkAuthAndContinue();
-  }, [isAuth, router, auth, setIsPreviousUrl, getAuthMe, setIsAuth]);
+  }, [isAuth, router, auth, setIsPreviousUrl, getAuthMe, setIsAuth, pathName]);
 
   useEffect(() => {
     // if (
