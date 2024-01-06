@@ -29,7 +29,7 @@ export const ModalCheckoutPickUp = (props: TModalCheckoutPickUpProps) => {
           type="text"
           name="note"
           value={isValNote}
-          onChange={e => {
+          onChange={(e) => {
             setIsValNote(e.target.value);
           }}
           placeholder="Nama Pemberi Barang"

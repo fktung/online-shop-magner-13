@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useState } from "react";
 import { Modal } from "./Modal";
 import {
@@ -30,13 +31,13 @@ export const ModalShareSosmed = (props: TModalShareSosmedProps) => {
     setIsLinkRef(linkRef);
     if (templateLocal) {
       setIsTemplate(
-        templateLocal.replaceAll("[LINK_REFERRAL]", `[${linkRef}]`),
+        templateLocal.replaceAll("[LINK_REFERRAL]", `[${linkRef}]`)
       );
       return;
     }
     localStorage.setItem(
       LOCAL_STORAGE.templateText,
-      TEMPLATE_TEXT + "[LINK_REFERRAL]",
+      TEMPLATE_TEXT + "[LINK_REFERRAL]"
     );
     setIsTemplate(TEMPLATE_TEXT + `[${linkRef}]`);
   };
@@ -50,10 +51,10 @@ export const ModalShareSosmed = (props: TModalShareSosmedProps) => {
     if (isEdit) {
       localStorage.setItem(
         LOCAL_STORAGE.templateText,
-        isTemplate.replaceAll(`[${isLinkRef}]`, "[LINK_REFERRAL]"),
+        isTemplate.replaceAll(`[${isLinkRef}]`, "[LINK_REFERRAL]")
       );
     }
-    setIsEdit(e => !e);
+    setIsEdit((e) => !e);
   };
 
   const handleChangeText = (e: React.ChangeEvent<HTMLTextAreaElement>) => {

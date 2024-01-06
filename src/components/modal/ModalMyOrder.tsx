@@ -21,7 +21,7 @@ export const ModalMyOrder = (props: IProps) => {
   const [isDetailOpen, setIsDetailOpen] = useState(false);
   const [isOrderLogs, setIsOrderLogs] = useState<TOrderLog[]>([]);
   const shoppingDate = `${new Date(
-    data?.audit_trail.created_at || "",
+    data?.audit_trail.created_at || ""
   ).getDate()} ${
     MONTHS[new Date(data?.audit_trail.created_at || "").getMonth()]
   } ${new Date(data?.audit_trail.created_at || "").getFullYear()}`;
@@ -36,7 +36,7 @@ export const ModalMyOrder = (props: IProps) => {
           setIsMessage("Berhasil menyalin ke clipboard");
           setIsCopy(true);
         })
-        .catch(error => {
+        .catch((error) => {
           setIsError(true);
           setIsMessage("Gagal menyalin ke clipboard");
           console.error("Error copying to clipboard:", error);
@@ -263,7 +263,7 @@ export const ModalMyOrder = (props: IProps) => {
               {data &&
                 data.order_items.reduce(
                   (total, item) => total + item.qty,
-                  0,
+                  0
                 )}{" "}
               Barang)
             </p>

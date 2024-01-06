@@ -153,7 +153,7 @@ export const LayoutDashboardV2 = (props: IProps) => {
                     </h4>
                   </div>
                 </div>
-              ),
+              )
             )}
 
             <div className="my-6">

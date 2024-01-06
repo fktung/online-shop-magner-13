@@ -10,7 +10,7 @@ type TModalNotificationUpdateFeatureProps = {
 };
 
 export const ModalNotificationUpdateFeature = (
-  props: TModalNotificationUpdateFeatureProps,
+  props: TModalNotificationUpdateFeatureProps
 ) => {
   const { htmlFor, data } = props;
   const { isModalNotif, setIsModalNotif } = useLayout();
@@ -58,7 +58,7 @@ export const ModalNotificationUpdateFeature = (
                   type="checkbox"
                   checked={isCheck}
                   className="checkbox checkbox-warning checkbox-sm"
-                  onChange={e => setIsCheck(e.target.checked)}
+                  onChange={(e) => setIsCheck(e.target.checked)}
                 />
                 <span className="label-text">Jangan Tampilkan Lagi</span>
               </label>

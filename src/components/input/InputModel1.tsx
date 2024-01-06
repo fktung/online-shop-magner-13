@@ -12,7 +12,7 @@ interface InputModel1Props {
   onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
 }
 
-export const InputModel1: React.FC<InputModel1Props> = props => {
+export const InputModel1: React.FC<InputModel1Props> = (props) => {
   const [isValue, setIsValue] = useState(false);
 
   function inputLoad() {

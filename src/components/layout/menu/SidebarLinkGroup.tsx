@@ -6,7 +6,7 @@ type IPorops = {
   activecondition: boolean;
 };
 
-const SidebarLinkGroup: React.FC<IPorops> = props => {
+const SidebarLinkGroup: React.FC<IPorops> = (props) => {
   const { children, activecondition } = props;
   const [open, setOpen] = useState(true);
   const { setShowSidebar, showSidebar } = useLayout();

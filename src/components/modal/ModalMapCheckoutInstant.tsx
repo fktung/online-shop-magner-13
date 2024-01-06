@@ -13,7 +13,7 @@ type TModalMapCheckoutInstantProps = {
 };
 
 export const ModalMapCheckoutInstant = (
-  props: TModalMapCheckoutInstantProps,
+  props: TModalMapCheckoutInstantProps
 ) => {
   const { htmlFor, address, getRate } = props;
   const [isAddress, setIsAddress] = useState<IAddress>();

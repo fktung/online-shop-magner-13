@@ -29,7 +29,7 @@ export const ModalWilayahAddress = (props: IProps) => {
   const [isCitiesFil, setIsCitiesFil] = useState<IRegion[]>([]);
   const [isCitiesOpen, setIsCitiesOpen] = useState(false);
   const [isCitiesName, setIsCitiesName] = useState<string>(
-    "Pilih Kota/Kabupaten",
+    "Pilih Kota/Kabupaten"
   );
 
   const [isSuburbs, setIsSuburbs] = useState<IRegion[]>([]);
@@ -111,33 +111,33 @@ export const ModalWilayahAddress = (props: IProps) => {
     const { name, value } = e.target;
     if (name.toLocaleLowerCase() === "province") {
       setIsProvinceFil(
-        isProvince.filter(item =>
-          item.name.toLocaleLowerCase().includes(value.toLocaleLowerCase()),
-        ),
+        isProvince.filter((item) =>
+          item.name.toLocaleLowerCase().includes(value.toLocaleLowerCase())
+        )
       );
       return;
     }
     if (name.toLocaleLowerCase() === "cities") {
       setIsCitiesFil(
-        isCities.filter(item =>
-          item.name.toLocaleLowerCase().includes(value.toLocaleLowerCase()),
-        ),
+        isCities.filter((item) =>
+          item.name.toLocaleLowerCase().includes(value.toLocaleLowerCase())
+        )
       );
       return;
     }
     if (name.toLocaleLowerCase() === "suburbs") {
       setIsSuburbsFil(
-        isSuburbs.filter(item =>
-          item.name.toLocaleLowerCase().includes(value.toLocaleLowerCase()),
-        ),
+        isSuburbs.filter((item) =>
+          item.name.toLocaleLowerCase().includes(value.toLocaleLowerCase())
+        )
       );
       return;
     }
     if (name.toLocaleLowerCase() === "areas") {
       setIsAreasFil(
-        isAreas.filter(item =>
-          item.name.toLocaleLowerCase().includes(value.toLocaleLowerCase()),
-        ),
+        isAreas.filter((item) =>
+          item.name.toLocaleLowerCase().includes(value.toLocaleLowerCase())
+        )
       );
       return;
     }

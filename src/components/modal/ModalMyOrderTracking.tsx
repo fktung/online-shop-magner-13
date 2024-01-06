@@ -31,7 +31,7 @@ export const ModalMyOrderTracking = (props: IProps) => {
           // setIsMessage("Berhasil menyalin ke clipboard");
           setIsCopy(true);
         })
-        .catch(error => {
+        .catch((error) => {
           setIsError(true);
           setIsMessage("Gagal menyalin ke clipboard");
           console.error("Error copying to clipboard:", error);
@@ -70,7 +70,7 @@ export const ModalMyOrderTracking = (props: IProps) => {
                   {EstimateDelivery(
                     dataOrder.shipping.audit_trail.created_at,
                     dataOrder.shipping.courier.min_day,
-                    dataOrder.shipping.courier.max_day,
+                    dataOrder.shipping.courier.max_day
                   )}
                 </p>
               </div>

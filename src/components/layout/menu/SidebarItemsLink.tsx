@@ -1,7 +1,6 @@
 import { TMenuLink } from "@/constant/layout";
 import { useLayout } from "@/hooks/layouts";
 import { useTranslationLocales } from "@/locales";
-import { t } from "i18next";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";

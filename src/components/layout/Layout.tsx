@@ -12,7 +12,7 @@ export interface ILayout {
   auth?: boolean;
 }
 
-export const Layout: React.FC<ILayout> = props => {
+export const Layout: React.FC<ILayout> = (props) => {
   const { children, auth } = props;
   const { isAuth, isPreviousUrl, setIsPreviousUrl } = useAuth();
   const router = useRouter();

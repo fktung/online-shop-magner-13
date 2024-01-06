@@ -19,7 +19,7 @@ const MENU_MOBILE = [
     name: "Product",
     children: <IconProduct />,
     uri: ROUTES.PRODUCTS,
-    matchUri: ["/products", "/product/[slug]"],
+    matchUri: ["/product", "/product/[slug]"],
   },
   {
     name: "Keranjang",

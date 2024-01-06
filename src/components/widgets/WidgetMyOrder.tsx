@@ -59,7 +59,7 @@ export const WidgetMyOrder = (props: IProps) => {
   };
   const selectColor = (status: string) => {
     let idColor = 0;
-    ORDER_STATUS.map(i => {
+    ORDER_STATUS.map((i) => {
       if (i.key === status) {
         idColor = i.id - 1;
       }
@@ -92,7 +92,7 @@ export const WidgetMyOrder = (props: IProps) => {
       confirmButtonColor: "#3085d6",
       cancelButtonColor: "#d33",
       confirmButtonText: "Ya, Batalkan!",
-    }).then(result => {
+    }).then((result) => {
       if (result.isConfirmed) {
         updateOrder("canceled");
       }
@@ -108,7 +108,7 @@ export const WidgetMyOrder = (props: IProps) => {
       confirmButtonColor: "#6DF776",
       cancelButtonColor: "#d33",
       confirmButtonText: "Pesanan Diterima!",
-    }).then(result => {
+    }).then((result) => {
       if (result.isConfirmed) {
         updateOrder("completed");
       }
@@ -124,13 +124,13 @@ export const WidgetMyOrder = (props: IProps) => {
       confirmButtonColor: "#ff7b25",
       cancelButtonColor: "#999",
       confirmButtonText: "Komplain Pesanan!",
-    }).then(result => {
+    }).then((result) => {
       if (result.isConfirmed) {
         updateOrder("complaint");
         window.open(
           `https://wa.me/6282154304340?text=saya%20mau%20komplain%20orderan%20saya%0anomer%20invoice:%20${invoice}`,
           "_blank",
-          "noopener,noreferrer",
+          "noopener,noreferrer"
         );
       }
     });
@@ -175,7 +175,7 @@ export const WidgetMyOrder = (props: IProps) => {
         .then(() => {
           router.replace(`#${invoice}`);
         })
-        .catch(error => {
+        .catch((error) => {
           setIsError(true);
           setIsMessage("Gagal menyalin ke clipboard");
           console.error("Error copying to clipboard:", error);

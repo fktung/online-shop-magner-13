@@ -45,7 +45,7 @@ export const WidgetFilterProduct = ({
     try {
       router.replace(ROUTES.PRODUCTS);
       const response = await ApiAxios.get(
-        `/products?page=${"1"}&limit=${isLimit}`,
+        `/products?page=${"1"}&limit=${isLimit}`
       );
       const data = await response.data;
       setisProducts(data.data);

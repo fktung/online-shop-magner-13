@@ -17,7 +17,7 @@ import Swal from "sweetalert2";
 interface IProps {
   htmlFor: string;
   handleChange: (
-    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => void;
   addResetInputs?: boolean;
   inputs: TInputForm;
@@ -67,7 +67,7 @@ export const ModalCompleteAddress = (props: IProps) => {
   }, [isCoordinat]);
 
   const handleClick = async (
-    dataAutocomplete: google.maps.places.AutocompletePrediction,
+    dataAutocomplete: google.maps.places.AutocompletePrediction
   ) => {
     handleChange({
       target: {
@@ -122,7 +122,7 @@ export const ModalCompleteAddress = (props: IProps) => {
     if (isAutocompleteNotMatch) {
       setIsError(true);
       setIsMessage(
-        "Alamat yang anda masukan tidak cocok dengan wilayah yang anda pilih!",
+        "Alamat yang anda masukan tidak cocok dengan wilayah yang anda pilih!"
       );
       return;
     }
@@ -136,7 +136,7 @@ export const ModalCompleteAddress = (props: IProps) => {
         cancelButtonColor: "#d33",
         confirmButtonText: "Ya, Sudah sesuai!",
         cancelButtonText: "Tidak Sesuai",
-      }).then(result => {
+      }).then((result) => {
         if (result.isConfirmed) {
           approveZipCode();
         }
@@ -207,7 +207,7 @@ export const ModalCompleteAddress = (props: IProps) => {
       cancelButtonColor: "#000000",
       confirmButtonText: "Lewati Set-koordinat",
       cancelButtonText: "Iya, Lanjut",
-    }).then(result => {
+    }).then((result) => {
       if (result.isConfirmed) {
         handleSubmit();
       } else {
@@ -259,7 +259,7 @@ export const ModalCompleteAddress = (props: IProps) => {
                   name="address"
                   value={inputs.address || ""}
                   disabled={!ready}
-                  onChange={e => {
+                  onChange={(e) => {
                     setValue(e.target.value);
                     handleChange(e);
                   }}

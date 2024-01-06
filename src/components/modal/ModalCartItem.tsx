@@ -39,7 +39,7 @@ export const ModalCartItem = (props: IProps) => {
             type="text"
             name="note"
             value={isNote}
-            onChange={e => {
+            onChange={(e) => {
               setIsNote(e.target.value);
             }}
           />

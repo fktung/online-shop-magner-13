@@ -8,7 +8,7 @@ export const Countdown = ({ seconds }: IProps) => {
   const timeId: any = useRef();
   useEffect(() => {
     timeId.current = setInterval(() => {
-      setIsCountdown(prev => prev - 1);
+      setIsCountdown((prev) => prev - 1);
     }, 1000);
     return () => clearInterval(timeId.current);
   }, []);

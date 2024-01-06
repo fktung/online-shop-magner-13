@@ -5,6 +5,7 @@ import { IProductsFlashSale } from "@/types";
 import Link from "next/link";
 import { Capitalize, MoneyFormat } from "@/helpers/common";
 import { WidgetsFlashSaleLabel } from "./WidgetsFlashSaleLabel";
+import { ROUTES } from "@/constant/routes";
 
 interface IProps {
   data: IProductsFlashSale[];
@@ -57,7 +58,7 @@ export const WidgetCardSliderFlashSale = (props: IProps) => {
             data.map((item, idx) => {
               return (
                 <Link
-                  href={"/product/" + item.product.slug}
+                  href={`${ROUTES.PRODUCTS}/${item.product.slug}`}
                   className="max-w-[11rem] relative cursor-pointer p-4 rounded-lg shadow-md dark:shadow-brand-muted min-w-[13rem] my-4 slider-card"
                   key={idx}
                 >

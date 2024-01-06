@@ -15,7 +15,7 @@ export const MenuAccountNavMobile = ({ options }: { options: TOption[] }) => {
   const router = useRouter();
   const { pathname } = router;
   const currentSelectedItem = pathname
-    ? options.find(o => o.slug === pathname)!
+    ? options.find((o) => o.slug === pathname)!
     : options[0];
   const [selectedItem, setSelectedItem] =
     useState<TOption>(currentSelectedItem);
