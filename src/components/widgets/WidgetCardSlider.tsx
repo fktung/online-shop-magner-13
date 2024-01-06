@@ -90,7 +90,7 @@ export const WidgetCardSlider = (props: IProps) => {
                   </div>
                 </div>
                 <div className="my-8">
-                  <p className="font-black">{MoneyFormat(row.price)}</p>
+                  <p className="font-semibold">{MoneyFormat(row.price)}</p>
                   <p>{Capitalize(row.name.toLowerCase())}</p>
                 </div>
                 <div className="flex items-center justify-between text-xs">
@@ -103,7 +103,7 @@ export const WidgetCardSlider = (props: IProps) => {
                   </p> */}
                 </div>
               </Link>
-            ) : null,
+            ) : null
           )}
         </div>
       </div>

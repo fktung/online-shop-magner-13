@@ -10,10 +10,12 @@ import Link from "next/link";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { useUser } from "@/hooks/user";
 import { usePathname, useRouter } from "next/navigation";
+import { useTranslationLocales } from "@/locales";
 
 export const MenuHeaderRight = () => {
   const router = useRouter();
   const pathName = usePathname();
+  const { t } = useTranslationLocales();
   const { isAvatar, isCart } = useUser();
   const { isAuth, isName, setIsPreviousUrl } = useAuth();
   const { setShowSidebar } = useLayout();

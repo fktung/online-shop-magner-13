@@ -1,5 +1,6 @@
 import { TMenuLink } from "@/constant/layout";
 import { useLayout } from "@/hooks/layouts";
+import { useTranslationLocales } from "@/locales";
 import { t } from "i18next";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -11,6 +12,7 @@ interface IProps {
 
 export const SidebarItemsLink = (props: IProps) => {
   const pathNamer = usePathname();
+  const { t } = useTranslationLocales();
 
   const { data } = props;
   const [open, setOpen] = useState(true);

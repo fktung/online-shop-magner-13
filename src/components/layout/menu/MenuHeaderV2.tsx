@@ -7,9 +7,11 @@ import { t } from "i18next";
 import { IconOutlineDown } from "@/components/icons";
 import { ROUTES } from "@/constant/routes";
 import { useLayout } from "@/hooks/layouts";
+import { useTranslationLocales } from "@/locales";
 
 export const MenuHeaderV2 = () => {
   const { setIsModalSearch } = useLayout();
+  const { t } = useTranslationLocales();
   return (
     <div className="relative py-3 mx-auto xs:w-full md:ltr:pl-6 md:rtl:pr-6 xl:ltr:pl-10 xl:rtl:pr-10">
       <div className="flex items-center justify-between w-full gap-8 font-bold">

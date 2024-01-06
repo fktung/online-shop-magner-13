@@ -4,8 +4,10 @@ import { MENU } from "@/constant/layout";
 import { Capitalize } from "@/helpers/common";
 import { t } from "i18next";
 import { useLayout } from "@/hooks/layouts";
+import { useTranslationLocales } from "@/locales";
 
 export const MenuSidebarLists = () => {
+  const { t } = useTranslationLocales();
   const { setIsModalSearch, setShowSidebar } = useLayout();
   return (
     <div className="p-8 overflow-y-auto pb-52">

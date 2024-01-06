@@ -26,9 +26,12 @@ html {
 }
 
 body {
-  font-family: "Roboto";
   @apply transition-all duration-300 bg-white dark:bg-dark dark:text-brand-light;
 }
+
+/* body p {
+  @apply tracking-normal
+} */
 
 .active-sidebar {
   @apply text-brand before:absolute before:ltr:right-0 rtl:left-0 before:bg-brand before:h-[3px] before:transition-all before:duration-300 before:bottom-2 before:w-full ltr:before:left-0 rtl:before:right-0 before:right-auto;

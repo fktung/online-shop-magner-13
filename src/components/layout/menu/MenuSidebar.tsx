@@ -10,10 +10,12 @@ import { ROUTES } from "@/constant/routes";
 import { Capitalize } from "@/helpers/common";
 import { t } from "i18next";
 import { usePathname, useRouter } from "next/navigation";
+import { useTranslationLocales } from "@/locales";
 
 export const MenuSidebar = () => {
   const router = useRouter();
   const pathName = usePathname();
+  const { t } = useTranslationLocales();
   const { setShowSidebar, showSidebar } = useLayout();
   const { isAuth, isName, setIsPreviousUrl, getAuthMe } = useAuth();
   const handleLogin = () => {
