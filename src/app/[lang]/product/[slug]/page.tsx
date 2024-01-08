@@ -1,14 +1,13 @@
 "use client";
 import { LayoutV2 } from "@/components/layout";
-import { ProductSection } from "@/components/section/product";
 import React from "react";
 
-const Products = () => {
+const PageDetail = () => {
   return (
     <LayoutV2>
-      <ProductSection />
+      <p>page</p>
     </LayoutV2>
   );
 };
 
-export default Products;
+export default PageDetail;

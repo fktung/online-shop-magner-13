@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import { ModalAddToCart, ModalAddToCartInWidgets } from "@/components/modal";
 import { Image } from "@/components/utility";
 import { WidgetsFlashSaleLabel } from "@/components/widgets";
@@ -10,7 +11,7 @@ import { useUser } from "@/hooks/user";
 import { IProducts } from "@/types";
 import { getCookie } from "cookies-next";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { usePathname, useRouter } from "next/navigation";
 import React, { useRef, useState } from "react";
 
 interface IProductWidgetProps {
@@ -29,7 +30,7 @@ export const ProductWidget = ({ data, className }: IProductWidgetProps) => {
   const tokenStorage = getCookie("_MToken");
   const addToCard = async () => {
     if (!isAuth && !tokenStorage) {
-      setIsPreviousUrl(router.asPath);
+      setIsPreviousUrl(usePathname());
       setIsError(true);
       setIsMessage("Silahkan Login terlebih dahulu");
       router.push(ROUTES.LOGIN);

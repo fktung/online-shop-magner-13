@@ -4,7 +4,7 @@ import { TInputForm } from "../input";
 import { ApiAxios } from "@/helpers/axios";
 import { IPagination, IProducts } from "@/types";
 import { ButtonBlack } from "../button";
-import { useRouter } from "next/router";
+import { useRouter, useSearchParams } from "next/navigation";
 import { ROUTES } from "@/constant/routes";
 import { useProduct } from "@/hooks/hookProduct";
 
@@ -31,14 +31,15 @@ export const WidgetFilterProduct = ({
   isLimit,
 }: IWidgetFilterProductProps) => {
   const router = useRouter();
+  const query = useSearchParams();
   const { setKeySearch } = useProduct();
   const [isShowWidget, SetIsShowWidget] = useState(false);
-  const hadleOpenWidget = () => {
+  const handleOpenWidget = () => {
     SetIsShowWidget(!isShowWidget);
     filterPrice("");
   };
   const resetFilter = async () => {
-    if (router.query.search) {
+    if (query.get("search")) {
       router.push(ROUTES.PRODUCTS);
       return;
     }
@@ -65,7 +66,7 @@ export const WidgetFilterProduct = ({
     <div className="relative">
       <div className="flex justify-between p-2 font-semibold max-w-[17rem]">
         <p className="hidden xl:block">Filter</p>
-        <p className="cursor-pointer xl:hidden" onClick={hadleOpenWidget}>
+        <p className="cursor-pointer xl:hidden" onClick={handleOpenWidget}>
           Filter
         </p>
         <button className="text-red-500" onClick={handleResetFilter}>

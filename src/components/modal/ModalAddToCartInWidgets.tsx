@@ -1,7 +1,6 @@
 import React from "react";
 import { Modal } from "./Modal";
-import { AiOutlineShoppingCart } from "react-icons/ai";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { ROUTES } from "@/constant/routes";
 import { Image } from "../utility";
 import { MoneyFormat } from "@/helpers/common";
@@ -21,7 +20,7 @@ interface IProps {
 export const ModalAddToCartInWidgets = (props: IProps) => {
   const { data, IsPrice, isShowAdd, setIsShowAdd } = props;
   const router = useRouter();
-  const hendleNextPage = () => {
+  const handleNextPage = () => {
     props.toggleModal();
     router.push(ROUTES.CART);
   };
@@ -70,7 +69,7 @@ export const ModalAddToCartInWidgets = (props: IProps) => {
         </div>
         <div className="grid gap-4 mt-8 sm:justify-center sm:items-center sm:flex">
           <button
-            onClick={hendleNextPage}
+            onClick={handleNextPage}
             className="w-full px-6 py-2 font-semibold text-center transition-all duration-300 border border-black rounded-md cursor-pointer min-w-max sm:w-48 hover:bg-zinc-100 dark:border-white"
           >
             Lihat Keranjang
