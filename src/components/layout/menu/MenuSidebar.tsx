@@ -2,15 +2,14 @@ import { useLayout } from "@/hooks/layouts";
 import React from "react";
 import { GrClose } from "react-icons/gr";
 import { MenuIcon } from "./MenuIcon";
-import { MenuSidebarDown } from "./MenuSidebarDown";
-import { MenuSidebarLists } from "./MenuSidebarLists";
-import { ButtonBlack } from "@/components/button";
 import { useAuth } from "@/hooks/auth";
 import { ROUTES } from "@/constant/routes";
-import { Capitalize } from "@/helpers/common";
-import { t } from "i18next";
 import { usePathname, useRouter } from "next/navigation";
 import { useTranslationLocales } from "@/locales";
+import { MenuSidebarLists } from "./MenuSidebarLists";
+import { MenuAuthentication, MenuSidebarBottom } from ".";
+import { FooterSubscription } from "../footerUtil";
+import { IconsSosmed } from "@/components/icons";
 
 export const MenuSidebar = () => {
   const router = useRouter();
@@ -47,19 +46,16 @@ export const MenuSidebar = () => {
             </button>
           </div>
           {!isAuth && (
-            <div className="flex items-center justify-between py-2 mx-2 border-b xl:hidden">
-              <div className="ml-2 xl:hidden">
-                <ButtonBlack onClick={handleLogin}>
-                  {Capitalize(t("common.singIn"))}
-                </ButtonBlack>
+            <div className="flex items-center justify-between py-2 mx-2 border-b sm:hidden">
+              <div className="ml-4 my-4">
+                <MenuAuthentication />
               </div>
-              {/* <InputSearchProduct /> */}
             </div>
           )}
           <div className="flex flex-col h-full pb-8">
             <MenuSidebarLists />
-            <div className="absolute bottom-0 left-0 right-0">
-              <MenuSidebarDown />
+            <div className="absolute bottom-0 left-0 right-0 p-6 border-t">
+              <IconsSosmed />
             </div>
           </div>
         </div>

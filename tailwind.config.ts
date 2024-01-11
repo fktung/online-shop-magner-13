@@ -24,6 +24,7 @@ const config: Config = {
         },
         brand: {
           DEFAULT: "#CEA131",
+          black: "#333333",
           dark: "#000000",
           light: "#ffffff",
           muted: "#595959",

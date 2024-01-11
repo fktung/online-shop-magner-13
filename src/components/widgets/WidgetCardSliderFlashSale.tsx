@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef } from "react";
 import Image from "next/image";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";

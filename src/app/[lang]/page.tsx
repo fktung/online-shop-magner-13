@@ -1,20 +1,20 @@
 "use client";
-import { LayoutV2 } from "@/components/layout";
 import {
   AutomotiveCare,
   SliderBanner,
   SliderFlashSale,
 } from "@/components/section/home";
+import { Layout } from "@/components/layout";
 
 export default function Home() {
   return (
-    <LayoutV2>
+    <Layout>
       <SliderBanner />
 
       <SliderFlashSale />
       <div className="my-20">
         <AutomotiveCare />
       </div>
-    </LayoutV2>
+    </Layout>
   );
 }

@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect } from "react";
 import { ILayout } from "./Layout";
 import { useLayout } from "@/hooks/layouts";

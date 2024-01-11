@@ -3,7 +3,7 @@ import { ApiAxios } from "@/helpers/axios";
 import { IProducts } from "@/types";
 
 export const getProducts = async (query?: any): Promise<IProducts[]> => {
-  console.log(query);
+  console.log("query", query);
   try {
     const response = await ApiAxios.get(`${ENDPOINT.products.DEFAULT}`);
     const data = await response.data;

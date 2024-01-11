@@ -1,6 +1,6 @@
+"use client";
 import React, { useRef } from "react";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
-import { AiFillStar } from "react-icons/ai";
 import { IProducts } from "@/types";
 import Link from "next/link";
 import { Capitalize, MoneyFormat } from "@/helpers/common";
