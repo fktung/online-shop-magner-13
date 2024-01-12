@@ -17,7 +17,7 @@ export const MenuAuthentication = () => {
         setIsPreviousUrl(pathName);
         router.push(ROUTES.LOGIN);
       }}
-      className="flex items-center gap-2 text-brand-black"
+      className="flex items-center gap-2"
     >
       <i className="text-lg">
         <FaUser />

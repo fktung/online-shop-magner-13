@@ -10,7 +10,6 @@ export default function Home() {
   return (
     <Layout className="overflow-hidden">
       <SliderBanner />
-
       <SliderFlashSale />
       <div className="my-20">
         <AutomotiveCare />
