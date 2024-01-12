@@ -10,11 +10,6 @@ import Link from "next/link";
 import { Image } from "@/components/utility";
 import { ApiAxios } from "@/helpers/axios";
 
-type TImagesProps = {
-  original: string;
-  thumbnail: string;
-};
-
 export const SliderBanner = () => {
   const [isSliderBanner, setIsSliderBanner] = useState<ISliderBanner[]>([]);
 

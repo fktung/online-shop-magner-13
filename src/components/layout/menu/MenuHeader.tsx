@@ -15,7 +15,7 @@ export const MenuHeader = () => {
   return (
     <div className="py-3 mx-auto xs:w-full md:ltr:pl-6 md:rtl:pr-6 xl:ltr:pl-10 xl:rtl:pr-10">
       <div className="flex items-center justify-center w-full gap-6 font-bold">
-        <div className="flex items-center justify-evenly gap-6 min-w-[345px]">
+        <div className="flex items-center justify-evenly gap-6 lg:min-w-[345px]">
           {MENU.map((item, i) => {
             return i <= 1 ? (
               <div
@@ -41,7 +41,7 @@ export const MenuHeader = () => {
           </Link>
         </div>
 
-        <div className="flex items-center justify-evenly gap-6 min-w-[345px]">
+        <div className="flex items-center justify-evenly gap-6 lg:min-w-[345px]">
           {MENU.map((item, i) => {
             return i >= 2 ? (
               <div

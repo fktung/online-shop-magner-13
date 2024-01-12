@@ -8,7 +8,7 @@ import { Layout } from "@/components/layout";
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout className="overflow-hidden">
       <SliderBanner />
 
       <SliderFlashSale />

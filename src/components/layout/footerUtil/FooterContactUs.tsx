@@ -1,4 +1,3 @@
-import { t } from "i18next";
 import React from "react";
 import { CiLocationOn } from "react-icons/ci";
 import { BsChatText, BsWhatsapp } from "react-icons/bs";
@@ -7,9 +6,11 @@ import { IoTimeOutline } from "react-icons/io5";
 import { Trans } from "react-i18next";
 import { COMPANY } from "@/constant/company";
 import Link from "next/link";
+import { useTranslationLocales } from "@/locales";
 
 export const FooterContactUs = () => {
   const { phone, email, address } = COMPANY;
+  const { t } = useTranslationLocales();
   return (
     <div className="pb-3.5 sm:pb-0 sm:col-span-2 xl:col-span-3 min-w-[15rem] md:min-w-min">
       <h2 className="text-brand-dark dark:text-brand-light text-base lg:text-xl lg:text-[17px] lg:leading-7 font-bold mb-4 sm:mb-5 lg:mb-6 pb-0.5">
@@ -65,7 +66,7 @@ export const FooterContactUs = () => {
               {t("common.day.monday")}
               {" - "}
               {t("common.day.friday")}{" "}
-              <Trans i18nKey="layout.footer.contactUs.operationalHour" />
+              {t("layout.footer.contactUs.operationalHour")}{" "}
             </p>
           </div>
         </ul>
