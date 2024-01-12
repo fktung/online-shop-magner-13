@@ -98,7 +98,7 @@ export const Footer = () => {
                 )}
                 {payment && (
                   <ul className="flex flex-wrap justify-center gap-2 sm:gap-6 items-center -mb-1.5 md:mb-0 mx-auto md:mx-0 pt-3.5 md:pt-0">
-                    {payment.map(item => (
+                    {payment.map((item) => (
                       <li key={item.id}>{item.icon}</li>
                     ))}
                   </ul>
