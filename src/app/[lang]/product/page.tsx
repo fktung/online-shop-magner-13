@@ -1,13 +1,12 @@
 "use client";
-import { LayoutV2 } from "@/components/layout";
-import { ProductSection } from "@/components/section/product";
+import { ProductSection } from "@/components/section/products";
 import React from "react";
 
 const Products = () => {
   return (
-    <LayoutV2>
+    <React.Fragment>
       <ProductSection />
-    </LayoutV2>
+    </React.Fragment>
   );
 };
 
